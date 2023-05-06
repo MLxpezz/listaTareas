@@ -1,0 +1,118 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do-container {
+    width: 350px;
+    height: 450px;
+    box-shadow: 0px 0px 10px 0px  #000;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.to-do-add {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 10px 40px 10px;
+}
+
+#task-name {
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    color: #000;
+    margin-right: 5px;
+}
+
+#task-name::placeholder {
+    color: #000;
+    font-weight: 700;
+}
+
+.add-task {
+    padding: 5px 10px;
+    border: none;
+    background: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 1s;
+    border-radius: 5px 5px 5px 0px;
+    opacity: 0.5;
+}
+
+.add-task:hover {
+    box-shadow: 0px 4px 5px  #000;
+}
+
+.to-do-list {
+    height: 400px;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+    list-style: none;
+    text-align: center;
+}
+
+.task {
+    height: 25px;
+    width: 200px;
+    border-radius: 5px;
+    font-weight: 800;
+    box-shadow: 7px 5px 10px  #000;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.task .delete {
+    float: right;
+    height: 100%;
+    border: none;
+    opacity: 0.3;
+    border-radius: 0px 5px 5px 0px;
+    transition: all 1s;
+}
+
+.task .delete:hover {
+    background-color: #fff;
+    opacity: 1;
+}
+
+.message {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.delete-all {
+    background: transparent;
+    border: 1px solid #000;
+    padding: 4px;
+    margin: 5px;
+    border-radius: 4px;
+    display: none;
+}
